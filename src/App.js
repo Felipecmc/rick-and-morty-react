@@ -19,9 +19,23 @@ function App() {
     setCurrentPage(currentPage + 1)
   )
 
-  const PreviousPage = () => (
-    setCurrentPage(currentPage - 1)
-  )
+  const PreviousPage = () => {
+    if(currentPage > 1){
+      setCurrentPage(currentPage - 1)
+    }
+  }
+  if(currentPage === 1){
+    return(
+      <div className="App">
+      <h2>Personagens</h2>
+      <button onClick={() => NextPage()}>Próxima Página</button>
+     <Characters
+     characterList={characterList}
+     />
+    </div>
+  );
+    
+  }
   return (
     <div className="App">
       <h2>Personagens</h2>
