@@ -59,6 +59,7 @@ li {
 
 media (max-width: 900px) {
   li{
+    margin-left: 8%;
     width: 30%;
   }
 }
