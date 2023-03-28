@@ -1,22 +1,10 @@
-import CharCard from "../CharCard"
-
-function Characters({characterList}) {
+function CharCard(props){
     return(
-        <ul>
-            
-            {characterList.map((character) => {
-                return (
-                    <CharCard
-                    status={character.status}
-                    name={character.name}
-                    id={character.id}
-                    image={character.image}
-                    />
-            )
-            })
-            }
-        </ul>
+        <li className={props.status} key={props.id}>
+            <h3>{props.name}</h3>
+            <img src={props.image} alt="" />
+        </li>
     )
 }
 
-export default Characters;
+export default CharCard;
