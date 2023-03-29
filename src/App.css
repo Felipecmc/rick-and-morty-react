@@ -46,6 +46,10 @@ body {
   }
 }
 
+.title{
+  margin-right: 3%;
+}
+
 button{
   width: 30%;
   height: 50px;
@@ -55,14 +59,11 @@ button{
 
 li {
   list-style-type: none;
+  box-shadow: 5px 5px 5px black;
+  margin-left: 2%;
 }
 
-media (max-width: 900px) {
-  li{
-    margin-left: 8%;
-    width: 30%;
-  }
-}
+
 
 .Alive{
   margin-top:5%;

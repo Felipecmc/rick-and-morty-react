@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { CharImage, CharName, CharStatus, CharSpecies, CharGender, CharLocation, Container, BackButton } from "./styles";
+import { CharImage, CharName, CharStatus, CharSpecies, CharGender, CharLocation, Container } from "./styles";
 
 function CharInfoPage() {
   const { id } = useParams(); // Obtém o ID do personagem a partir dos parâmetros da rota
