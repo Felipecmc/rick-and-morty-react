@@ -38,7 +38,7 @@ function App() {
   }
   return (
     <div className="App">
-      <h2>Personagens</h2>
+      <h2 className= "title">Personagens</h2>
       <button onClick={() => PreviousPage()}>Página Anterior</button><button onClick={() => NextPage()}>Próxima Página</button>
      <Characters
      characterList={characterList}
